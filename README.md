@@ -136,7 +136,7 @@ Body ejemplo (`POST`/`PUT`):
 
 ```json
 {
-  "title": "Cien anos de soledad",
+  "title": "Cien años de soledad",
   "isbn": "9780307474728",
   "publicationYear": 1967,
   "image": "https://example.com/book.jpg",
