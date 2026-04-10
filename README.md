@@ -106,3 +106,143 @@ VALUES
 ('Fiesta', '978-84-206-1288-5', 1926, 'https://covers.openlibrary.org/b/isbn/9788420612881-L.jpg', 8);
 
 ---
+
+## ⚙️ Configuración de la Aplicación
+
+spring.datasource.url=jdbc:mysql://localhost:3306/library_db
+
+spring.datasource.username=${DB_USERNAME:root}
+
+spring.datasource.password=${DB_PASSWORD:}
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+
+spring.jpa.show-sql=true
+
+spring.jpa.open-in-view=false
+
+---
+
+▶️ Cómo Ejecutar el Proyecto
+IntelliJ IDEA
+
+Abrir el proyecto desde pom.xml
+
+Configurar SDK en Java 17+
+
+Ejecutar LibraryApplication
+
+Terminal
+
+mvn spring-boot:run
+
+---
+
+## 📡 API Endpoints
+
+| Método | Endpoint        | Descripción               |
+| ------ | --------------- | ------------------------- |
+| GET    | `/authors`      | Obtener todos los autores |
+| GET    | `/authors/{id}` | Obtener autor por ID      |
+| POST   | `/authors`      | Crear autor               |
+| PUT    | `/authors/{id}` | Actualizar autor          |
+| DELETE | `/authors/{id}` | Eliminar autor            |
+
+---
+## Request Body
+
+{
+
+  "name": "Gabriel",
+  
+  "lastName": "García Márquez",
+  
+  "nationality": "Colombiano",
+  
+  "birthYear": 1927,
+  
+  "isAlive": false
+  
+}
+
+---
+
+## 📖 Books
+
+| Método | Endpoint      | Descripción              |
+| ------ | ------------- | ------------------------ |
+| GET    | `/books`      | Obtener todos los libros |
+| GET    | `/books/{id}` | Obtener libro por ID     |
+| POST   | `/books`      | Crear libro              |
+| PUT    | `/books/{id}` | Actualizar libro         |
+| DELETE | `/books/{id}` | Eliminar libro           |
+
+---
+
+## Request Body
+
+{
+
+  "title": "Cien años de soledad",
+  
+  "isbn": "978-0-06-088328-7",
+  
+  "publicationYear": 1967,
+  
+  "image": "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg",
+  
+  "authorId": 1
+  
+}
+
+---
+
+## Response
+
+{
+
+  "id": 1,
+  
+  "title": "Cien años de soledad",
+  
+  "isbn": "978-0-06-088328-7",
+  
+  "publicationYear": 1967,
+  
+  "image": "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg",
+  
+  "authorName": "Gabriel",
+  
+  "authorLastName": "García Márquez"
+  
+}
+
+---
+
+## ⚠️ Manejo de Errores
+400 Bad Request → Datos inválidos
+404 Not Found → Recurso no encontrado
+
+---
+
+## 🌐 Repositorio
+
+https://github.com/Capitulo-Cero/capitulocero-backend
+
+---
+
+## ✨ Mejoras Futuras
+
+🔐 Autenticación (Spring Security)
+
+📄 Paginación y filtros
+
+🧪 Tests unitarios
+
+📚 Swagger / OpenAPI
+
+🐳 Docker
+
+----
