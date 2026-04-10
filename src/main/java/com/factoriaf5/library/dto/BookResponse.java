@@ -6,6 +6,7 @@ public record BookResponse(
         String isbn,
         Integer publicationYear,
         String image,
-        Long authorId
+        String authorName,
+        String authorLastName
 ) {
 }

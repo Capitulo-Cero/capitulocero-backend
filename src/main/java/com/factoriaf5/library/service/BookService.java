@@ -83,7 +83,8 @@ public class BookService {
                 book.getIsbn(),
                 book.getPublicationYear(),
                 book.getImage(),
-                book.getAuthor().getId()
+                book.getAuthor().getName(),
+                book.getAuthor().getLastName()
         );
     }
 }
