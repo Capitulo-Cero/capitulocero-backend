@@ -246,3 +246,23 @@ https://github.com/Capitulo-Cero/capitulocero-backend
 🐳 Docker
 
 ----
+
+---
+
+---
+
+## 👨‍💻 Equipo de Desarrollo
+
+<div align="center">
+
+| 👤 | Nombre | Rol | GitHub |
+|----|--------|-----|--------|
+| 🧑‍💻 | **Adrián Baeza** | Developer | [@Adrian-1986](https://github.com/Adrian-1986) |
+| 👩‍💻 | **Alba Ganduxé** | Product Owner | [@AlbaGG95](https://github.com/AlbaGG95) |
+| 👩‍💻 | **Ana Morandeira** | Developer | [@ana-morandeira](https://github.com/ana-morandeira) |
+| 🧑‍💻 | **Xabier Piñeiro** | Developer | [@gzifoto-spec](https://github.com/gzifoto-spec) |
+| 👩‍💻 | **María Regueiro** | Scrum Master | [@Mariaregue-spec](https://github.com/Mariaregue-spec) |
+
+</div>
+
+---
